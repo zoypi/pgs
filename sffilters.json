@@ -1,0 +1,36 @@
+{
+  "sport": [
+    "football", "soccer", "premier league", "la liga", "serie a", "bundesliga",
+    "champions league", "fifa", "uefa", "world cup", "cricket", "wicket",
+    "test match", "ipl", "rugby", "nfl", "nba", "mlb", "nhl", "tennis",
+    "us open", "wimbledon", "australian open", "french open", "roland garros",
+    "golf", "pga", "formula 1", "formula one", "grand prix", "olympics",
+    "olympic", "athletics", "basketball", "baseball", "ice hockey", "super bowl",
+    "playoff", "playoffs", "quarter-final", "semi-final", "striker", "midfielder",
+    "goalkeeper", "batsman", "bowler", "tournament", "marathon", "boxing",
+    "ufc", "squad", "goal", "goals", "broncos", "nbl", "channel nine", "doping"
+  ],
+  "stockBuy": [
+    "stocks to buy", "shares to buy", "buy this stock", "buy these stocks",
+    "best stocks to buy", "top stocks to buy", "stocks worth buying",
+    "time to buy", "should you buy", "is it time to buy", "buy the dip",
+    "buying opportunity", "analyst upgrades", "price target raised",
+    "upgrade to buy", "initiated with buy", "initiated at buy"
+  ],
+  "tv": [
+    "tv tonight", "television tonight", "on tv tonight", "what's on tv",
+    "whats on tv", "tv guide", "tv schedule", "tv show", "tv series",
+    "tv season", "new season", "returning season", "season premiere",
+    "series premiere", "season finale", "series finale", "episode recap",
+    "episode review", "streaming now", "netflix series", "amazon prime series",
+    "disney plus series", "hulu series", "binge watch", "binge-watch"
+  ],
+  "people": [
+    "stefanovic"
+  ],
+  "misc": [
+    "australian politics live", "australia politics", "women's team", "maroons",
+    "roberts-smith", "steakhouse", "steak", "meat", "shooting", "shooter",
+    "gun", "assault", "gunman", "car crash"
+  ]
+}
