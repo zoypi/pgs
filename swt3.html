@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='23 4 23 10 17 10'%3E%3C/polyline%3E%3Cpolyline points='1 20 1 14 7 14'%3E%3C/polyline%3E%3Cpath d='M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15'%3E%3C/path%3E%3C/svg%3E">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperWeather</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .card {
+            max-width: 1000px;
+            width: 100%;
+            background: #ffffff;
+            padding: 2rem 2rem 1.8rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 0.1rem;
+        }
+
+        .header h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f1419;
+        }
+
+        .header .sub {
+            font-size: 0.82rem;
+            color: #536471;
+            font-weight: 400;
+        }
+
+        .header .date-range {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-weight: 400;
+            display: block;
+            margin-top: 0.05rem;
+        }
+
+        .refresh-container {
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem 0 0.75rem;
+        }
+
+        .refresh-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 57px;
+            height: 57px;
+            background: transparent;
+            border: 1px solid #eff3f4;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.15s ease;
+            padding: 0;
+            color: #0f1419;
+        }
+
+        .refresh-btn:hover {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+.refresh-btn svg {
+            width: 27px;
+            height: 27px;
+        }
+
+        .refresh-btn.spinning svg {
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 408px;
+            margin: 0.25rem 0 0.1rem;
+        }
+
+        #rainChart {
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 8px;
+            cursor: crosshair;
+        }
+
+        #tooltip {
+            position: absolute;
+            display: none;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+            border-radius: 8px;
+            padding: 0.6rem 0.9rem;
+            color: #1e293b;
+            font-size: 0.9rem;
+            pointer-events: none;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            min-width: 0;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        #tooltip .tt-header {
+            color: #0f172a;
+            font-size: 0.88rem;
+            margin-bottom: 0.3rem;
+        }
+
+        #tooltip .tt-temp {
+            color: #c07820;
+            font-size: 1.32rem;
+            font-weight: 600;
+        }
+
+        #tooltip .tt-rain {
+            color: #3b82f6;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        #tooltip .tt-humidity {
+            color: #6366f1;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        #tooltip .tt-wind {
+            color: #a855f7;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+
+        .chart-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.9rem;
+            color: #111827;
+            margin: 0.1rem 0 0.2rem;
+            flex-wrap: wrap;
+        }
+
+        .chart-meta-sep { color: #cbd5e1; }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 0.9rem;
+            margin: 0 0 0.25rem;
+            font-size: 0.72rem;
+            color: #64748b;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-item svg { display: inline-block; vertical-align: middle; }
+
+        .legend-item.wind-toggle {
+            cursor: pointer;
+            user-select: none;
+            opacity: 0.45;
+            transition: opacity 0.15s ease;
+        }
+
+        .legend-item.wind-toggle.active {
+            opacity: 1;
+        }
+
+        .legend-item.wind-toggle:hover {
+            opacity: 0.75;
+        }
+
+        .legend-item.wind-toggle.active:hover {
+            opacity: 1;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2.5rem 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .loading .spinner {
+            display: inline-block;
+            animation: spin 1s linear infinite;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .error {
+            text-align: center;
+            padding: 2rem 0;
+            color: #ef4444;
+            font-size: 0.9rem;
+        }
+
+        /* Map */
+        #map-section {
+            margin-top: 0.5rem;
+            border-top: 1px solid #eff3f4;
+            padding-top: 0.5rem;
+            padding-bottom: 0.8rem;
+        }
+
+        #map-section .map-hint {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #475569;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        .privacy-note {
+            text-align: center;
+            font-size: 0.72rem;
+            color: #374151;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+        }
+
+        #world-map {
+            width: 100%;
+            height: 408px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .leaflet-control-attribution {
+            font-size: 0.65rem !important;
+            color: #94a3b8 !important;
+            background: rgba(255,255,255,0.7) !important;
+        }
+
+        /* Top location bar */
+        .loc-bar { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 4px 0 24px; }
+        .loc-top-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; justify-content: center; }
+        .loc-current-name { font-size: inherit; font-weight: inherit; color: inherit; }
+        .loc-temp-lo  { font-size: 1.1rem; font-weight: 300; color: #0f1419; }
+        .loc-temp-now { font-size: 1.1rem; font-weight: 700; color: #c07820; }
+        .loc-temp-hi  { font-size: 1.1rem; font-weight: 300; color: #0f1419; }
+        #topWxIcon svg { width: 46px; height: 46px; stroke-width: 1.7; }
+        .loc-btn {
+            display: inline-block; padding: 6px 16px; border-radius: 999px;
+            border: 1px solid #8b98a5; background: #fff;
+            font-size: 0.78rem; font-weight: 700; color: #536471;
+            cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s;
+            user-select: none; -webkit-user-select: none;
+        }
+        .loc-btn:hover { background: #f7f9f9; }
+        .loc-btn.active { background: #0f1419; color: #fff; border-color: #0f1419; }
+
+        /* Confirm popup */
+        .sw-confirm-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.28);
+            display: flex; align-items: center; justify-content: center; z-index: 9999;
+        }
+        .sw-confirm-box {
+            background: #fff; border-radius: 12px; padding: 1.4rem 1.6rem 1.2rem;
+            max-width: 300px; width: 90%; box-shadow: 0 8px 32px rgba(0,0,0,0.18); text-align: center;
+        }
+        .sw-confirm-box p { font-size: 0.95rem; color: #0f1419; line-height: 1.5; margin-bottom: 1.1rem; }
+        .sw-confirm-btns { display: flex; gap: 10px; justify-content: center; }
+        .sw-confirm-btns button {
+            padding: 6px 20px; border-radius: 999px; border: 1px solid #8b98a5;
+            font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s;
+        }
+        .sw-confirm-btns .btn-ok { background: #0f1419; color: #fff; border-color: #0f1419; }
+        .sw-confirm-btns .btn-cancel { background: #fff; color: #536471; }
+        .sw-confirm-btns .btn-cancel:hover { background: #f7f9f9; }
+
+        /* Location dropdown */
+        .sw-loc-dropdown {
+            position: absolute; z-index: 8000;
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+            min-width: 220px; max-width: 280px;
+            overflow: hidden;
+        }
+        .sw-loc-list { list-style: none; margin: 0; padding: 6px 0; max-height: 240px; overflow-y: auto; }
+        .sw-loc-list li {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 9px 14px; cursor: pointer; font-size: 0.82rem; color: #0f1419;
+            transition: background 0.1s;
+        }
+        .sw-loc-list li:hover { background: #f0f2f4; }
+        .sw-loc-list li.active { font-weight: 700; background: #e2e6ea; }
+        .sw-loc-list li.active:hover { background: #d8dce0; }
+        .sw-loc-list li .sw-loc-remove {
+            background: none; border: none; cursor: pointer; color: #94a3b8;
+            font-size: 1rem; line-height: 1; padding: 0 0 0 8px; flex-shrink: 0;
+        }
+        .sw-loc-list li .sw-loc-remove:hover { color: #ef4444; }
+        .sw-loc-divider { border: none; border-top: 1px solid #f1f5f9; margin: 4px 0; }
+        .sw-loc-addrow {
+            padding: 8px 14px; display: flex; flex-direction: column; gap: 6px;
+        }
+        .sw-loc-addrow-btns { display: flex; gap: 8px; }
+        .sw-loc-addbtn {
+            flex: 1; padding: 7px 0; border-radius: 999px; border: 1px solid #8b98a5;
+            background: #fff; font-size: 0.75rem; font-weight: 700; color: #536471;
+            cursor: pointer; transition: background 0.12s;
+        }
+        .sw-loc-addbtn:hover { background: #f7f9f9; }
+        .sw-loc-search-wrap { display: flex; gap: 6px; }
+        .sw-loc-search-input {
+            flex: 1; padding: 6px 10px; border: 1px solid #8b98a5; border-radius: 8px;
+            font-size: 0.78rem; color: #0f1419; outline: none;
+        }
+        .sw-loc-search-go {
+            padding: 6px 12px; border-radius: 8px; border: 1px solid #0f1419;
+            background: #0f1419; color: #fff; font-size: 0.75rem; font-weight: 700; cursor: pointer;
+        }
+        /* Pin popup — chart-tooltip style */
+        .sw-pin-popup .leaflet-popup-content-wrapper {
+            background: rgba(255,255,255,0.96);
+            border: 1px solid rgba(226,232,240,0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            padding: 0;
+        }
+        .sw-pin-popup .leaflet-popup-content { margin: 0; padding: 0.55rem 0.85rem; }
+        .sw-pin-popup .leaflet-popup-tip { background: rgba(255,255,255,0.96); }
+
+        /* Daily strip */
+        #daily-strip {
+            margin: 0.75rem 0 0.5rem;
+            border-top: 1px solid #eff3f4;
+            padding-top: 0.5rem;
+        }
+        .ds-row {
+            display: flex;
+            align-items: center;
+            padding: 3px 0;
+            border-bottom: 1px solid #f1f5f9;
+            gap: 0;
+            width: fit-content;
+        }
+        .ds-row:last-child { border-bottom: none; }
+        .ds-dow { width: 42px; font-size: 1.05rem; color: #0f1419; font-weight: 400; margin-right: 10px; }
+        .ds-date { width: 58px; font-size: 0.72rem; color: #536471; font-weight: 400; }
+        .ds-icon { width: 36px; display: flex; align-items: center; }
+        .ds-rain { width: 42px; font-size: 1rem; color: #3b82f6; text-align: right; font-weight: 400; }
+        .ds-lo { width: 44px; font-size: 1rem; color: #536471; text-align: right; }
+        .ds-hi { width: 44px; font-size: 1rem; color: #c07820; font-weight: 600; text-align: right; }
+
+        .mobile-only { display: none; }
+        @media (max-width: 640px) {
+            .desktop-only { display: none !important; }
+            .mobile-only { display: inline-block; }
+            .card { padding: 1rem 0.6rem; }
+            .chart-container { height: 306px; }
+            .header h1 { font-size: 1rem; }
+            .header .sub { font-size: 0.7rem; }
+            .header .date-range { font-size: 0.65rem; }
+            .legend { gap: 0.6rem; font-size: 0.65rem; }
+            #tooltip { font-size: 0.75rem; padding: 0.5rem 0.7rem; min-width: 110px; }
+            #tooltip .tt-header { font-size: 0.82rem; }
+            .refresh-btn { width: 57px; height: 57px; }
+            .refresh-btn svg { width: 27px; height: 27px; }
+            #world-map { height: 288px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>SuperWeather</h1>
+        </div>
+
+        <div class="refresh-container">
+            <button class="refresh-btn" id="refreshBtn" aria-label="Refresh weather" title="Refresh weather">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Top location bar -->
+        <div class="loc-bar" id="topLocBar" style="position:relative;">
+            <div style="display:flex;gap:8px;justify-content:center;margin-bottom:1rem;position:relative;">
+                <button class="loc-btn active" id="modelBtn">Model: ECMWF (Default)</button>
+                <div class="sw-loc-dropdown" id="modelDropdown" style="display:none;top:100%;left:50%;transform:translateX(-50%);"></div>
+            </div>
+            <div id="modelReason" style="display:none;text-align:center;font-size:0.68rem;color:#8a5410;margin:-0.6rem 0 0.6rem;"></div>
+            <div class="loc-top-row" style="display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;">
+                <button id="changeLocBtn" class="loc-btn active">
+                    <span class="loc-current-name" id="currentLocName"></span>
+                </button>
+                <span class="loc-temp-lo" id="topTempLo"></span>
+                <span class="loc-temp-now" id="topTempNow"></span>
+                <span class="loc-temp-hi" id="topTempHi"></span>
+            </div>
+            <div class="sw-loc-dropdown" id="locDropdown" style="display:none;top:100%;left:50%;transform:translateX(-50%);"></div>
+        </div>
+
+        <div style="display:flex;gap:8px;align-items:center;margin:0 0 0.4rem;">
+            <button class="loc-btn active" id="graphToggleBtn">Graph</button>
+            <span id="forecastBtnGroup">
+                <button class="loc-btn desktop-only" id="forecastBtn7">7 Days</button>
+                <button class="loc-btn desktop-only" id="forecastBtn14">14 Days</button>
+                <button class="loc-btn mobile-only" id="forecastBtn5">5 Days</button>
+                <button class="loc-btn mobile-only" id="forecastBtn9">9 Days</button>
+            </span>
+        </div>
+
+        <div id="graph-section">
+        <div class="legend">
+            <span class="legend-item">
+                <svg width="20" height="12" viewBox="0 0 20 12"><line x1="0" y1="6" x2="20" y2="6" stroke="#c07820" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <span>Temperature (°C)</span>
+            </span>
+            <span class="legend-item">
+                <svg width="20" height="12" viewBox="0 0 20 12"><line x1="0" y1="6" x2="20" y2="6" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <span>Rainfall (mm)</span>
+            </span>
+            <span class="legend-item wind-toggle" id="windToggle" title="Click to show/hide wind">
+                <svg width="20" height="12" viewBox="0 0 20 12"><line x1="0" y1="6" x2="20" y2="6" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3"/></svg>
+                <span>Wind (km/h)</span>
+            </span>
+        </div>
+
+        <div class="chart-container" id="chartContainer">
+            <div class="loading">
+                <div class="spinner">⟳</div>
+                <div>loading forecast data...</div>
+            </div>
+            <div id="tooltip"></div>
+        </div>
+
+        </div><!-- end graph-section -->
+
+        <div style="display:flex;gap:8px;align-items:center;margin:0.4rem 0 0.2rem;">
+            <button class="loc-btn active" id="mapToggleBtn">Map</button>
+        </div>
+        <div id="map-section">
+            <div id="world-map"></div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;margin:0.4rem 0 0.2rem;">
+            <button class="loc-btn active" id="dailyToggleBtn">Daily Forecasts</button>
+        </div>
+        <div id="daily-strip"></div>
+        <p class="privacy-note">SuperWeather does not collect/retain any data from users. No tracking. No cookies. No advertising.</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        (function() {
+            const APP_VERSION = '4';
+            if (localStorage.getItem('sw_version') !== APP_VERSION) {
+                ['A','B','C'].forEach(s => localStorage.removeItem('sw_loc_' + s));
+                localStorage.removeItem('sw_locs');
+                ['graphVisible','mapVisible','sat','night','english'].forEach(k => localStorage.removeItem('sw_pref_' + k));
+                localStorage.setItem('sw_version', APP_VERSION);
+            }
+
+            let currentLat = -26.41696;
+            let currentLon = 152.91269;
+
+            let chartData = null;
+            let tooltipTimeout = null;
+            let isRefreshing = false;
+            let mapMarker = null;
+            let showWind = false;
+
+            function getModelLabel(lat, lon) {
+                // Infer likely Open-Meteo best-match model from coordinates
+                if (lat >= -44 && lat <= -10 && lon >= 112 && lon <= 154)
+                    return 'Aus BoM ACCESS-G/City';
+                if (lat >= 24 && lat <= 50 && lon >= -125 && lon <= -66)
+                    return 'NOAA GFS/HRRR';
+                if (lat >= 35 && lat <= 72 && lon >= -10 && lon <= 40)
+                    return 'DWD ICON/ECMWF';
+                return 'NOAA GFS';
+            }
+
+            let forecastDays = window.innerWidth <= 640 ? 5 : 7;
+
+            // Weather model selection. '' = Auto (region-based best pick).
+            const MODEL_OPTIONS = [
+                ['bom_access_global', 'BoM (Legacy)'],
+                ['icon_seamless', 'DWD ICON'],
+                ['ecmwf_ifs025', 'ECMWF (Default)'],
+                ['jma_seamless', 'JMA'],
+                ['meteofrance_seamless', 'Météo-France'],
+                ['gfs_global', 'NOAA GFS'],
+                ['', 'Open-Meteo'],
+            ];
+            let forcedModel = localStorage.getItem('sw_pref_model') || 'ecmwf_ifs025';
+
+            // '' = Auto → Open-Meteo best_match. Otherwise the forced model id.
+            function resolvedModelId() {
+                return forcedModel;
+            }
+
+            function modelLabel(id) {
+                const opt = MODEL_OPTIONS.find(o => o[0] === id);
+                return opt ? opt[1] : id;
+            }
+
+            function updateModelBtn(lat, lon) {
+                const btn = document.getElementById('modelBtn');
+                if (!btn) return;
+                const reasonEl = document.getElementById('modelReason');
+                if (reasonEl) { reasonEl.textContent = ''; reasonEl.style.display = 'none'; }
+                btn.textContent = 'Model: ' + modelLabel(forcedModel);
+            }
+
+            function buildApiUrl(lat, lon, days = 16, modelId = undefined) {
+                const id = modelId === undefined ? resolvedModelId() : modelId;
+                const model = id ? `&models=${id}` : '';
+                return `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,precipitation,relative_humidity_2m,wind_speed_10m,wind_direction_10m&daily=weather_code,precipitation_probability_max,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=${days}${model}`;
+            }
+
+            function coordStr(lat, lon) {
+                return `${Math.abs(lat).toFixed(2)}° ${lat >= 0 ? 'N' : 'S'}, ${Math.abs(lon).toFixed(2)}° ${lon >= 0 ? 'E' : 'W'}`;
+            }
+
+            function updateLocationLabel(lat, lon) {
+                const el = document.getElementById('locationLabel');
+                if (!el) return;
+                const coords = coordStr(lat, lon);
+                // Reserve two-line height immediately so geocode response doesn't shift layout
+                el.innerHTML = `<strong>&nbsp;</strong><br><span style="font-size:0.7rem;color:#374151;">${coords}</span>`;
+                fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`, {
+                    headers: { 'Accept-Language': 'en' }
+                })
+                .then(r => r.json())
+                .then(d => {
+                    const a = d.address || {};
+                    const name = a.city || a.town || a.village || a.hamlet || a.county || a.state_district || a.state || a.country || '';
+                    el.innerHTML = `<strong>${name || coords}</strong><br><span style="font-size:0.7rem;color:#374151;">${coords}</span>`;
+                })
+                .catch(() => {
+                    el.innerHTML = `<strong>${coords}</strong><br><span style="font-size:0.7rem;color:#374151;">${coords}</span>`;
+                });
+            }
+
+            function updateDateRange(times) {
+                const el = document.getElementById('dateRangeDisplay');
+                if (!el || !times || times.length === 0) return;
+                const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                const fp = parseLocalParts(times[0]);
+                const lp = parseLocalParts(times[Math.min(times.length - 1, 167)]);
+                el.textContent = `${fp.d} ${months[fp.mo-1]} – ${lp.d} ${months[lp.mo-1]}`;
+            }
+
+            function showError(msg) {
+                const container = document.getElementById('chartContainer');
+                if (!container) return;
+                container.innerHTML = `<div class="error"><i>✖</i> ${msg}</div><div id="tooltip"></div>`;
+            }
+
+            // Parse "YYYY-MM-DDTHH:MM" directly — never use new Date() on these strings
+            // because browsers treat no-tz strings as local time, breaking cross-timezone display.
+            function parseLocalParts(dateStr) {
+                const [datePart, timePart] = dateStr.split('T');
+                const [y, mo, d] = datePart.split('-').map(Number);
+                const [h, min] = (timePart || '00:00').split(':').map(Number);
+                return { y, mo, d, h, min };
+            }
+
+            function getHour(dateStr) {
+                return parseLocalParts(dateStr).h;
+            }
+
+            function formatHour(dateStr) {
+                const { h, min } = parseLocalParts(dateStr);
+                const ampm = h >= 12 ? 'pm' : 'am';
+                const h12 = h % 12 || 12;
+                return h12 + ':' + String(min).padStart(2, '0') + ' ' + ampm;
+            }
+
+            function getDayLabel(dateStr) {
+                const { y, mo, d } = parseLocalParts(dateStr);
+                const t = [0,3,2,5,0,3,5,1,4,6,2,4];
+                const yr = mo < 3 ? y - 1 : y;
+                const dow = (yr + Math.floor(yr/4) - Math.floor(yr/100) + Math.floor(yr/400) + t[mo-1] + d) % 7;
+                return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dow];
+            }
+
+            function formatDateLabel(dateStr) {
+                const { d, mo } = parseLocalParts(dateStr);
+                const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                return `${d} ${months[mo-1]}`;
+            }
+
+            function localStrToUtcMs(dateStr, utcOffsetSecs) {
+                const { y, mo, d, h, min } = parseLocalParts(dateStr);
+                return Date.UTC(y, mo - 1, d, h, min) - utcOffsetSecs * 1000;
+            }
+
+            // Wind direction label from degrees (meteorological: direction wind is FROM)
+            function windDirLabel(deg) {
+                const dirs = ['N','NE','E','SE','S','SW','W','NW'];
+                return dirs[Math.round(deg / 45) % 8];
+            }
+
+            function drawChart(data) {
+                const container = document.getElementById('chartContainer');
+                if (!container) return;
+
+                chartData = data;
+
+                const hourly = data.hourly;
+                const times = hourly.time;
+                const temps = hourly.temperature_2m || [];
+                const rain = hourly.precipitation || [];
+                const humidity = hourly.relative_humidity_2m || [];
+                const windspeed = hourly.wind_speed_10m || [];
+                const winddir = hourly.wind_direction_10m || [];
+
+                const isMobile = window.innerWidth <= 600;
+                const maxPoints = Math.min(times.length, forecastDays * 24);
+                const displayTimes = times.slice(0, maxPoints);
+                const displayTemps = temps.slice(0, maxPoints);
+                const rawRain = rain.slice(0, maxPoints);
+                const displayRain = rawRain.map((v, i, a) => {
+                    const prev = a[i - 1] ?? v;
+                    const next = a[i + 1] ?? v;
+                    return Math.max(0, (prev + v + next) / 3);
+                });
+                const displayHumidity = humidity.slice(0, maxPoints);
+                const displayWind = windspeed.slice(0, maxPoints);
+                const displayWindDir = winddir.slice(0, maxPoints);
+                const n = displayTimes.length;
+
+                updateDateRange(displayTimes);
+
+                const minTemp = Math.min(...displayTemps.map(v => v != null ? v : 0), 0);
+                const maxTemp = Math.max(...displayTemps.map(v => v != null ? v : 0), minTemp + 20);
+                const maxRain = Math.max(...displayRain.map(v => v || 0), 0.5);
+                const rainMax = Math.min(Math.max(maxRain, 2), 10);
+                const maxWind = Math.max(...displayWind.map(v => v || 0), 10);
+                const windMax = Math.ceil(maxWind / 10) * 10;
+
+                container.innerHTML = `
+                    <div class="chart-container" id="chartInner" style="position:relative;">
+                        <canvas id="rainChart"></canvas>
+                        <canvas id="touchLine" style="position:absolute;top:0;left:0;pointer-events:none;"></canvas>
+                    </div>
+                    <div id="tooltip"></div>
+                `;
+
+                const newTooltip = document.getElementById('tooltip');
+                const canvas = document.getElementById('rainChart');
+                const touchLineCanvas = document.getElementById('touchLine');
+                if (!canvas || !newTooltip) return;
+
+                const rect = canvas.parentElement.getBoundingClientRect();
+                const dpr = window.devicePixelRatio || 1;
+                const width = rect.width || canvas.parentElement.clientWidth || 700;
+                const height = rect.height || 300;
+
+                canvas.width = width * dpr;
+                canvas.height = height * dpr;
+                canvas.style.width = width + 'px';
+                canvas.style.height = height + 'px';
+
+                if (touchLineCanvas) {
+                    touchLineCanvas.width = width * dpr;
+                    touchLineCanvas.height = height * dpr;
+                    touchLineCanvas.style.width = width + 'px';
+                    touchLineCanvas.style.height = height + 'px';
+                }
+
+                const ctx = canvas.getContext('2d');
+                ctx.scale(dpr, dpr);
+
+                const pad = { top: 30, bottom: 40, left: 50, right: 50 };
+                const chartW = width - pad.left - pad.right;
+                const chartH = height - pad.top - pad.bottom;
+
+                canvas._data = {
+                    displayTimes, displayTemps, displayRain, displayHumidity,
+                    displayWind, displayWindDir,
+                    n, pad, chartW, chartH, minTemp, maxTemp, rainMax, windMax,
+                    tooltip: newTooltip
+                };
+
+                function render() {
+                    ctx.clearRect(0, 0, width, height);
+                    ctx.fillStyle = '#ffffff';
+                    ctx.fillRect(0, 0, width, height);
+
+                    // Day/night bands
+                    for (let i = 0; i < n - 1; i++) {
+                        const hour = getHour(displayTimes[i]);
+                        const x1 = pad.left + (i / (n - 1)) * chartW;
+                        const x2 = pad.left + ((i + 1) / (n - 1)) * chartW;
+                        ctx.fillStyle = (hour >= 6 && hour < 18) ? '#ffffff' : '#e8ecf1';
+                        ctx.fillRect(x1, pad.top, x2 - x1, chartH);
+                    }
+
+                    // Grid lines + axis labels
+                    ctx.strokeStyle = 'rgba(0,0,0,0.08)';
+                    ctx.lineWidth = 0.5;
+                    for (let i = 0; i <= 4; i++) {
+                        const y = pad.top + chartH - (i / 4) * chartH;
+                        ctx.beginPath();
+                        ctx.moveTo(pad.left, y);
+                        ctx.lineTo(width - pad.right, y);
+                        ctx.stroke();
+
+                        ctx.fillStyle = '#c07820';
+                        ctx.font = '12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+                        ctx.textAlign = 'right';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillText(Math.round(minTemp + (i / 4) * (maxTemp - minTemp)) + '°', pad.left - 8, y);
+
+                        ctx.fillStyle = '#3b82f6';
+                        ctx.font = '12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+                        ctx.textAlign = 'left';
+                        ctx.fillText(((i / 4) * rainMax).toFixed(1) + 'mm', width - pad.right + 8, y);
+                    }
+
+                    // Midnight separators
+                    for (let i = 0; i < n; i++) {
+                        if (getHour(displayTimes[i]) === 0) {
+                            const x = pad.left + (i / (n - 1 || 1)) * chartW;
+                            ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+                            ctx.lineWidth = 0.5;
+                            ctx.beginPath();
+                            ctx.moveTo(x, pad.top);
+                            ctx.lineTo(x, pad.top + chartH);
+                            ctx.stroke();
+                        }
+                    }
+
+                    // Noon day labels
+                    for (let i = 0; i < n; i++) {
+                        if (getHour(displayTimes[i]) === 12) {
+                            const x = pad.left + (i / (n - 1 || 1)) * chartW;
+                            ctx.fillStyle = '#475569';
+                            ctx.font = '11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'top';
+                            ctx.fillText(getDayLabel(displayTimes[i]), x, pad.top + chartH + 8);
+                        }
+                    }
+
+                    const getTempY = v => pad.top + chartH - ((v - minTemp) / (maxTemp - minTemp)) * chartH;
+                    const getRainY = v => Math.max(pad.top, pad.top + chartH - (Math.max(0, v) / rainMax) * chartH);
+                    const getWindY = v => pad.top + chartH - (v / windMax) * chartH;
+
+                    // Wind line (behind other lines, only if enabled)
+                    if (showWind && n > 1) {
+                        ctx.beginPath();
+                        for (let i = 0; i < n; i++) {
+                            const x = pad.left + (i / (n - 1)) * chartW;
+                            const y = getWindY(displayWind[i] || 0);
+                            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+                        }
+                        ctx.strokeStyle = '#a855f7';
+                        ctx.lineWidth = 1.5;
+                        ctx.setLineDash([4, 3]);
+                        ctx.stroke();
+                        ctx.setLineDash([]);
+                    }
+
+                    // Temperature line
+                    if (n > 1) {
+                        ctx.beginPath();
+                        for (let i = 0; i < n; i++) {
+                            const x = pad.left + (i / (n - 1)) * chartW;
+                            const y = getTempY(displayTemps[i] != null ? displayTemps[i] : 0);
+                            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+                        }
+                        ctx.strokeStyle = '#c07820';
+                        ctx.lineWidth = 3;
+                        ctx.stroke();
+                    }
+
+                    // Rainfall line + fill
+                    if (n > 1) {
+                        ctx.beginPath();
+                        for (let i = 0; i < n; i++) {
+                            const x = pad.left + (i / (n - 1)) * chartW;
+                            const y = getRainY(displayRain[i] || 0);
+                            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+                        }
+                        ctx.strokeStyle = '#3b82f6';
+                        ctx.lineWidth = 2.5;
+                        ctx.stroke();
+                        ctx.lineTo(pad.left + chartW, pad.top + chartH);
+                        ctx.lineTo(pad.left, pad.top + chartH);
+                        ctx.closePath();
+                        ctx.fillStyle = 'rgba(59, 130, 246, 0.1)';
+                        ctx.fill();
+                    }
+
+                    // NOW line
+                    const utcOffsetSecs = data.utc_offset_seconds || 0;
+                    const nowUtcMs = Date.now();
+                    let nowIndex = 0, minDiff = Infinity;
+                    for (let i = 0; i < n; i++) {
+                        const diff = Math.abs(localStrToUtcMs(displayTimes[i], utcOffsetSecs) - nowUtcMs);
+                        if (diff < minDiff) { minDiff = diff; nowIndex = i; }
+                    }
+                    if (nowIndex >= 0 && nowIndex < n) {
+                        const x = pad.left + (nowIndex / (n - 1 || 1)) * chartW;
+                        ctx.strokeStyle = '#000000';
+                        ctx.lineWidth = 2;
+                        ctx.setLineDash([4, 4]);
+                        ctx.beginPath();
+                        ctx.moveTo(x, pad.top);
+                        ctx.lineTo(x, pad.top + chartH);
+                        ctx.stroke();
+                        ctx.setLineDash([]);
+                        ctx.fillStyle = '#000000';
+                        ctx.beginPath();
+                        ctx.moveTo(x, pad.top - 2);
+                        ctx.lineTo(x - 6, pad.top + 6);
+                        ctx.lineTo(x + 6, pad.top + 6);
+                        ctx.closePath();
+                        ctx.fill();
+                        const locDate = new Date(nowUtcMs + utcOffsetSecs * 1000);
+                        const nh = locDate.getUTCHours();
+                        const nm = String(locDate.getUTCMinutes()).padStart(2,'0');
+                        const nampm = nh >= 12 ? 'pm' : 'am';
+                        const nh12 = nh % 12 || 12;
+                        const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+                        const nowDayLabel = days[locDate.getUTCDay()];
+                        ctx.fillStyle = '#000000';
+                        ctx.font = '14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+                        ctx.fillText(nowDayLabel + ' ' + nh12 + ':' + nm + ' ' + nampm, x, pad.top - 4);
+                    }
+
+                    ctx.strokeStyle = 'rgba(0,0,0,0.08)';
+                    ctx.lineWidth = 0.5;
+                    ctx.strokeRect(pad.left, pad.top, chartW, chartH);
+                }
+
+                render();
+                canvas._render = render;
+
+                // Tooltip interactions
+                function getDataPoint(e) {
+                    const r = canvas.getBoundingClientRect();
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                    const x = clientX - r.left;
+                    const y = clientY - r.top;
+                    const d = canvas._data;
+                    if (!d || d.n < 2) return null;
+                    const relX = (x - d.pad.left) / d.chartW;
+                    const idx = Math.round(relX * (d.n - 1));
+                    if (idx < 0 || idx >= d.n) return null;
+                    return {
+                        idx,
+                        time: d.displayTimes[idx],
+                        temp: d.displayTemps[idx],
+                        rain: d.displayRain[idx],
+                        humidity: d.displayHumidity[idx],
+                        wind: d.displayWind[idx],
+                        winddir: d.displayWindDir[idx],
+                        x: d.pad.left + (idx / (d.n - 1)) * d.chartW,
+                        y
+                    };
+                }
+
+                function showTooltip(e) {
+                    const d = canvas._data;
+                    if (!d) return;
+                    const point = getDataPoint(e);
+                    if (!point) { d.tooltip.style.display = 'none'; return; }
+
+                    const temp = point.temp != null ? Math.round(point.temp) : '—';
+                    const rainVal = point.rain != null ? point.rain.toFixed(1) : '0.0';
+                    const hum = point.humidity != null ? Math.round(point.humidity) : '—';
+                    const ws = point.wind != null ? Math.round(point.wind) : '—';
+                    const wd = point.winddir != null ? windDirLabel(point.winddir) : '';
+
+                    let windLine = '';
+                    if (showWind) {
+                        windLine = `<div class="tt-wind">${ws} km/h ${wd}</div>`;
+                    }
+
+                    d.tooltip.innerHTML = `
+                        <div class="tt-header">${getDayLabel(point.time)} · ${formatHour(point.time)}</div>
+                        <div class="tt-temp">${temp}°C</div>
+                        <div class="tt-rain">${rainVal}mm</div>
+                        <div class="tt-humidity">${hum}% humidity</div>
+                        ${windLine}
+                    `;
+
+                    d.tooltip.style.display = 'block';
+                    const r = canvas.getBoundingClientRect();
+                    const cr = container.getBoundingClientRect();
+                    const ptX = point.x - r.left + cr.left;
+                    const ptY = point.y - r.top + cr.top;
+                    const ttW = d.tooltip.offsetWidth;
+                    const ttH = d.tooltip.offsetHeight;
+                    const gap = e.touches ? 60 : 12;
+                    const inRightHalf = ptX < cr.width / 2;
+                    let left = inRightHalf ? ptX + gap : ptX - ttW - gap;
+                    left = Math.max(4, Math.min(left, cr.width - ttW - 4));
+                    let top = ptY - ttH / 2;
+                    top = Math.max(4, Math.min(top, cr.height - ttH - 4));
+                    d.tooltip.style.left = left + 'px';
+                    d.tooltip.style.top = top + 'px';
+                }
+
+                function hideTooltip() {
+                    if (canvas._data && canvas._data.tooltip) canvas._data.tooltip.style.display = 'none';
+                }
+
+                canvas.addEventListener('mousemove', e => {
+                    clearTimeout(tooltipTimeout); tooltipTimeout = null;
+                    showTooltip(e);
+                    drawTouchLine(e);
+                });
+                canvas.addEventListener('mouseleave', () => {
+                    tooltipTimeout = setTimeout(hideTooltip, 100);
+                    clearTouchLine();
+                });
+                function drawTouchLine(e) {
+                    const tlc = document.getElementById('touchLine');
+                    if (!tlc) return;
+                    const d = canvas._data;
+                    if (!d) return;
+                    const point = getDataPoint(e);
+                    const tlCtx = tlc.getContext('2d');
+                    tlCtx.clearRect(0, 0, tlc.width, tlc.height);
+                    if (!point) return;
+                    const x = (d.pad.left + (point.idx / (d.n - 1)) * d.chartW) * dpr;
+                    tlCtx.beginPath();
+                    tlCtx.moveTo(x, d.pad.top * dpr);
+                    tlCtx.lineTo(x, (d.pad.top + d.chartH) * dpr);
+                    tlCtx.strokeStyle = 'rgba(0,0,0,0.45)';
+                    tlCtx.lineWidth = 1.5 * dpr;
+                    tlCtx.stroke();
+                }
+                function clearTouchLine() {
+                    const tlc = document.getElementById('touchLine');
+                    if (tlc) tlc.getContext('2d').clearRect(0, 0, tlc.width, tlc.height);
+                }
+
+                canvas.addEventListener('touchstart', e => {
+                    const r = canvas.getBoundingClientRect();
+                    const x = e.touches[0].clientX - r.left;
+                    if (x < pad.left || x > width - pad.right) return;
+                    e.preventDefault(); showTooltip(e); drawTouchLine(e);
+                }, { passive: false });
+                canvas.addEventListener('touchmove', e => {
+                    const r = canvas.getBoundingClientRect();
+                    const x = e.touches[0].clientX - r.left;
+                    if (x < pad.left || x > width - pad.right) return;
+                    e.preventDefault(); showTooltip(e); drawTouchLine(e);
+                }, { passive: false });
+                canvas.addEventListener('touchend', () => {
+                    tooltipTimeout = setTimeout(() => { hideTooltip(); clearTouchLine(); }, 3000);
+                });
+            }
+
+            // B&W SVG icons for daily strip
+            const ICONS = {
+                sun: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round"><circle cx="16" cy="16" r="4"/><line x1="16" y1="7.5" x2="16" y2="10"/><line x1="16" y1="22" x2="16" y2="24.5"/><line x1="7.5" y1="16" x2="10" y2="16"/><line x1="22" y1="16" x2="24.5" y2="16"/><line x1="10.3" y1="10.3" x2="12" y2="12"/><line x1="20" y1="20" x2="21.7" y2="21.7"/><line x1="21.7" y1="10.3" x2="20" y2="12"/><line x1="10.3" y1="21.7" x2="12" y2="20"/></svg>`,
+                partlyCloudy: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round"><circle cx="11" cy="11" r="4"/><line x1="11" y1="4" x2="11" y2="6.5"/><line x1="11" y1="15.5" x2="11" y2="18"/><line x1="4" y1="11" x2="6.5" y2="11"/><line x1="15.5" y1="11" x2="18" y2="11"/><line x1="6.2" y1="6.2" x2="8" y2="8"/><line x1="14" y1="14" x2="15.8" y2="15.8"/><line x1="15.8" y1="6.2" x2="14" y2="8"/><line x1="8" y1="14" x2="6.2" y2="15.8"/><path d="M9,23 Q7,23 7,21 Q7,18 10,18 Q11,15 15,15 Q19,15 19,19 Q22,19 22,22 Q22,25 19,25 L9,25 Z" fill="white" stroke="none"/><path d="M9,23 Q7,23 7,21 Q7,18 10,18 Q11,15 15,15 Q19,15 19,19 Q22,19 22,22 Q22,25 19,25 L9,25 Z"/></svg>`,
+                cloud: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9,22 Q6,22 6,19 Q6,15.5 9.5,15.5 Q10.5,11.5 15,11.5 Q20,11.5 20,16 Q23.5,16 23.5,19.5 Q23.5,23 20,23 L9,23 Z"/></svg>`,
+                rainSun: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round"><circle cx="10" cy="10" r="3.5"/><line x1="10" y1="4" x2="10" y2="5.8"/><line x1="10" y1="14.2" x2="10" y2="16"/><line x1="4" y1="10" x2="5.8" y2="10"/><line x1="14.2" y1="10" x2="16" y2="10"/><line x1="5.5" y1="5.5" x2="6.8" y2="6.8"/><line x1="13.2" y1="13.2" x2="14.5" y2="14.5"/><line x1="14.5" y1="5.5" x2="13.2" y2="6.8"/><line x1="6.8" y1="13.2" x2="5.5" y2="14.5"/><path d="M11,21 Q9,21 9,19 Q9,16.5 11.5,16.5 Q12.5,14 16,14 Q20,14 20,17.5 Q22.5,17.5 22.5,20 Q22.5,23 20,23 L11,23 Z" fill="white" stroke="none"/><path d="M11,21 Q9,21 9,19 Q9,16.5 11.5,16.5 Q12.5,14 16,14 Q20,14 20,17.5 Q22.5,17.5 22.5,20 Q22.5,23 20,23 L11,23 Z"/><line x1="13" y1="25.5" x2="12" y2="28"/><line x1="17" y1="25.5" x2="16" y2="28"/><line x1="21" y1="25.5" x2="20" y2="28"/></svg>`,
+                rain: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round"><path d="M9,19 Q6,19 6,16 Q6,12.5 9.5,12.5 Q10.5,8.5 15,8.5 Q20,8.5 20,13 Q23.5,13 23.5,16.5 Q23.5,20 20,20 L9,20 Z"/><line x1="11" y1="23" x2="10" y2="26"/><line x1="16" y1="23" x2="15" y2="26"/><line x1="21" y1="23" x2="20" y2="26"/></svg>`,
+                thunder: `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1e293b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9,19 Q6,19 6,16 Q6,12.5 9.5,12.5 Q10.5,8.5 15,8.5 Q20,8.5 20,13 Q23.5,13 23.5,16.5 Q23.5,20 20,20 L9,20 Z"/><polyline points="17,21 14,26 17,26 14,31"/></svg>`,
+            };
+
+            function wmoIcon(code, rainPct) {
+                const c = Number(code);
+                const r = Number(rainPct) || 0;
+                const sunny = c <= 2; // WMO says clear or partly cloudy
+
+                if (c >= 95) return ICONS.thunder;
+                if (c >= 51) return sunny ? ICONS.rainSun : ICONS.rain; // shouldn't happen but safe
+                // c >= 51 already handled; now c <= 50
+                if (r >= 40) return sunny ? ICONS.rainSun : ICONS.rain;
+                if (r >= 30) return sunny ? ICONS.partlyCloudy : ICONS.cloud;
+                // Low rain probability — use WMO
+                if (c === 0) return ICONS.sun;  // strict clear + low rain → sun
+                if (c <= 2) return ICONS.partlyCloudy;
+                return ICONS.cloud;
+            }
+
+            function updateTopTemps(data) {
+                const loEl = document.getElementById('topTempLo');
+                const nowEl = document.getElementById('topTempNow');
+                const hiEl = document.getElementById('topTempHi');
+                if (!loEl || !nowEl || !hiEl) return;
+
+                // Today's lo/hi from daily[0]
+                const daily = data.daily;
+                const lo = daily && daily.temperature_2m_min && daily.temperature_2m_min[0] != null ? Math.round(daily.temperature_2m_min[0]) : null;
+                const hi = daily && daily.temperature_2m_max && daily.temperature_2m_max[0] != null ? Math.round(daily.temperature_2m_max[0]) : null;
+
+                // Current temp: nearest hourly point to now
+                const hourly = data.hourly;
+                const utcOffset = data.utc_offset_seconds || 0;
+                let nowTemp = null;
+                if (hourly && hourly.time && hourly.temperature_2m) {
+                    let minDiff = Infinity, bestIdx = 0;
+                    for (let i = 0; i < hourly.time.length; i++) {
+                        const diff = Math.abs(localStrToUtcMs(hourly.time[i], utcOffset) - Date.now());
+                        if (diff < minDiff) { minDiff = diff; bestIdx = i; }
+                    }
+                    nowTemp = hourly.temperature_2m[bestIdx] != null ? Math.round(hourly.temperature_2m[bestIdx]) : null;
+                }
+
+                loEl.textContent  = lo != null  ? lo + '°'    : '';
+                nowEl.textContent = nowTemp != null ? nowTemp + '°' : '';
+                hiEl.textContent  = hi != null  ? hi + '°'    : '';
+
+                // Current-conditions icon (today's weather code + rain chance)
+                const iconEl = document.getElementById('topWxIcon');
+                if (iconEl) {
+                    const code = daily && daily.weather_code ? daily.weather_code[0] : null;
+                    const pct = daily && daily.precipitation_probability_max ? daily.precipitation_probability_max[0] : 0;
+                    iconEl.innerHTML = code != null ? wmoIcon(code, pct) : '';
+                }
+            }
+
+            function drawDailyStrip(data) {
+                const container = document.getElementById('daily-strip');
+                if (!container) return;
+                const daily = data.daily;
+                if (!daily || !daily.time) { container.innerHTML = ''; return; }
+
+                const times = daily.time;
+                const codes = daily.weather_code || [];
+                const precip = daily.precipitation_probability_max || [];
+                const hi = daily.temperature_2m_max || [];
+                const lo = daily.temperature_2m_min || [];
+                const count = Math.min(times.length, 14);
+                const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+                const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+                function dayParts(dateStr) {
+                    const [y, mo, d] = dateStr.split('-').map(Number);
+                    const t = [0,3,2,5,0,3,5,1,4,6,2,4];
+                    const yr = mo < 3 ? y - 1 : y;
+                    const dow = dayNames[(yr + Math.floor(yr/4) - Math.floor(yr/100) + Math.floor(yr/400) + t[mo-1] + d) % 7];
+                    return { dow, date: `${d} ${monthNames[mo - 1]}` };
+                }
+
+                let rows = '';
+                for (let i = 0; i < count; i++) {
+                    const rawPct = precip[i] != null ? precip[i] : null;
+                    const rain = rawPct != null ? (Math.round(rawPct / 10) * 10) + '%' : '—';
+                    const hiT = hi[i] != null ? Math.round(hi[i]) + '°' : '—';
+                    const loT = lo[i] != null ? Math.round(lo[i]) + '°' : '—';
+                    const { dow, date } = dayParts(times[i]);
+                    rows += `<div class="ds-row">` +
+                        `<span class="ds-dow">${dow}</span>` +
+                        `<span class="ds-date">${date}</span>` +
+                        `<span class="ds-icon">${wmoIcon(codes[i], rawPct)}</span>` +
+                        `<span class="ds-rain">${rain}</span>` +
+                        `<span class="ds-lo">${loT}</span>` +
+                        `<span class="ds-hi">${hiT}</span>` +
+                        `</div>`;
+                }
+                container.innerHTML = rows;
+            }
+
+            async function fetchWeather(lat, lon, showSpinner = false) {
+                const refreshBtn = document.getElementById('refreshBtn');
+                if (isRefreshing) return;
+                isRefreshing = true;
+
+                if (showSpinner) {
+                    refreshBtn.classList.add('spinning');
+                    refreshBtn.disabled = true;
+                } else {
+                    const container = document.getElementById('chartContainer');
+                    if (container) {
+                        container.innerHTML = `
+                            <div class="loading">
+                                <div class="spinner">⟳</div>
+                                <div>loading forecast data...</div>
+                            </div>
+                            <div id="tooltip"></div>
+                        `;
+                    }
+                }
+
+                let lastReason = '';
+                try {
+                    // Try the resolved model; if it has no data here, fall back to best_match
+                    async function tryFetch(url) {
+                        const controller = new AbortController();
+                        const timeout = setTimeout(() => controller.abort(), 15000);
+                        try {
+                            const response = await fetch(url, { signal: controller.signal });
+                            clearTimeout(timeout);
+                            const d = await response.json().catch(() => null);
+                            if (!response.ok) {
+                                lastReason = `HTTP ${response.status}` + (d && d.reason ? `: ${d.reason}` : '');
+                                return null;
+                            }
+                            if (!d || !d.hourly || !d.hourly.time || d.hourly.time.length === 0) {
+                                lastReason = (d && d.reason) ? d.reason : 'no hourly data in response';
+                                return null;
+                            }
+                            // Require actual temperature values — some models return times but no usable data
+                            const temps = d.hourly.temperature_2m;
+                            if (!Array.isArray(temps) || !temps.some(v => v != null)) {
+                                lastReason = (d && d.reason) ? d.reason : 'no temperature data for this model here';
+                                return null;
+                            }
+                            return d;
+                        } catch (e) {
+                            clearTimeout(timeout);
+                            lastReason = e && e.name === 'AbortError' ? 'request timed out' : (e && e.message ? e.message : 'network error');
+                            return null;
+                        }
+                    }
+
+                    let data = await tryFetch(buildApiUrl(lat, lon));
+                    let fellBack = false;
+                    // If a forced model returned nothing at 16 days, retry at 10 (some models e.g. BoM only run ~10 days)
+                    if (!data && resolvedModelId()) {
+                        data = await tryFetch(buildApiUrl(lat, lon, 10));
+                    }
+                    if (!data && resolvedModelId()) {
+                        // Requested model has no coverage here — retry with best_match (no models param)
+                        const fbUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,precipitation,relative_humidity_2m,wind_speed_10m,wind_direction_10m&daily=weather_code,precipitation_probability_max,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=16`;
+                        data = await tryFetch(fbUrl);
+                        fellBack = !!data;
+                    }
+                    if (!data) throw new Error(lastReason || 'No hourly data available');
+
+                    // Forced model failed and we fell back — revert selection to Auto silently
+                    if (fellBack && forcedModel) {
+                        forcedModel = 'ecmwf_ifs025';
+                        localStorage.setItem('sw_pref_model', 'ecmwf_ifs025');
+                    }
+
+                    drawChart(data);
+                    drawDailyStrip(data);
+                    updateTopTemps(data);
+                    updateForecastBtn();
+                    updateModelBtn(lat, lon);
+                } catch (err) {
+                    console.error('Weather fetch error:', err);
+                    showError('Unable to load weather data: ' + (err && err.message ? err.message : 'unknown error'));
+                } finally {
+                    isRefreshing = false;
+                    refreshBtn.classList.remove('spinning');
+                    refreshBtn.disabled = false;
+                }
+            }
+
+            // Wind toggle
+            const windToggle = document.getElementById('windToggle');
+            windToggle.addEventListener('click', () => {
+                showWind = !showWind;
+                windToggle.classList.toggle('active', showWind);
+                // Re-render canvas in place without refetching
+                const canvas = document.getElementById('rainChart');
+                if (canvas && canvas._render) canvas._render();
+                // Update tooltip if visible
+                const tt = document.getElementById('tooltip');
+                if (tt) tt.style.display = 'none';
+            });
+
+            // ── Location list ──────────────────────────────────────────────
+            const LOC_DEFAULTS = [
+                { lat: -26.41696, lon: 152.91269, name: 'Cooroy' },
+            ];
+
+            function loadLocs() {
+                try {
+                    const stored = JSON.parse(localStorage.getItem('sw_locs'));
+                    return Array.isArray(stored) && stored.length ? stored : LOC_DEFAULTS.slice();
+                } catch(e) { return LOC_DEFAULTS.slice(); }
+            }
+            function saveLocs(locs) { localStorage.setItem('sw_locs', JSON.stringify(locs)); }
+
+            let locList = loadLocs();
+            let activeLocIdx = 0;
+
+            function getPlaceName(lat, lon) {
+                return fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`,
+                    { headers: { 'Accept-Language': 'en' } }
+                ).then(r => r.json()).then(d => {
+                    const a = d.address || {};
+                    return a.city || a.town || a.village || a.hamlet || a.county || a.state_district || a.state || a.country || coordStr(lat, lon);
+                }).catch(() => coordStr(lat, lon));
+            }
+
+            function navigateToLoc(idx, keepSat) {
+                const loc = locList[idx];
+                if (!loc) return;
+                activeLocIdx = idx;
+                currentLat = loc.lat; currentLon = loc.lon;
+                if (mapMarker) mapMarker.setLatLng([currentLat, currentLon]);
+                map.setView([currentLat, currentLon], 10);
+                updateLocationLabel(currentLat, currentLon);
+                fetchWeather(currentLat, currentLon, false);
+                if (!keepSat) setSat(false);
+                syncCurrentName();
+            }
+
+            function syncCurrentName() {
+                const el = document.getElementById('currentLocName');
+                if (!el) return;
+                const loc = locList[activeLocIdx];
+                el.textContent = loc ? loc.name : '';
+            }
+
+            // ── Dropdown ───────────────────────────────────────────────────
+            const dropdown = document.getElementById('locDropdown');
+            const changeLocBtn = document.getElementById('changeLocBtn');
+            let dropdownOpen = false;
+            let addMode = null; // null | 'search' | 'map'
+            let fromMapPending = false;
+            let addLocPopup = null;
+
+            let addLocPopupTimer = null;
+            function showAddLocPopup(lat, lon) {
+                if (addLocPopupTimer) { clearTimeout(addLocPopupTimer); addLocPopupTimer = null; }
+                if (addLocPopup) { map.closePopup(addLocPopup); addLocPopup = null; }
+                const div = document.createElement('div');
+                div.style.cssText = 'font-family:-apple-system,sans-serif;text-align:center;min-width:130px;';
+                div.innerHTML = '<div style="font-size:0.72rem;color:#536471;margin-bottom:6px;">Move pin or:</div>';
+                L.DomEvent.disableClickPropagation(div);
+                const btn = document.createElement('button');
+                btn.textContent = 'Add to list';
+                btn.style.cssText = 'padding:6px 16px;border-radius:999px;border:1px solid #0f1419;background:#0f1419;color:#fff;font-size:0.78rem;font-weight:700;cursor:pointer;';
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    if (addLocPopupTimer) { clearTimeout(addLocPopupTimer); addLocPopupTimer = null; }
+                    map.closePopup(addLocPopup); addLocPopup = null;
+                    fromMapPending = false;
+                    const saveLat = currentLat, saveLon = currentLon;
+                    getPlaceName(saveLat, saveLon).then(name => {
+                        locList.push({ lat: saveLat, lon: saveLon, name });
+                        saveLocs(locList);
+                        activeLocIdx = locList.length - 1;
+                        syncCurrentName();
+                    });
+                });
+                div.appendChild(btn);
+                addLocPopup = L.popup({ closeButton: true, autoClose: false, closeOnClick: false, offset: [0, -14], className: 'sw-pin-popup' })
+                    .setLatLng([lat, lon])
+                    .setContent(div)
+                    .openOn(map);
+                const _popupEl = addLocPopup.getElement ? addLocPopup.getElement() : null;
+                if (_popupEl) L.DomEvent.disableClickPropagation(_popupEl);
+                addLocPopupTimer = setTimeout(() => {
+                    if (addLocPopup) { map.closePopup(addLocPopup); addLocPopup = null; }
+                    addLocPopupTimer = null;
+                }, 8000);
+            }
+
+            function openDropdown() {
+                renderDropdown();
+                dropdown.style.display = '';
+                dropdownOpen = true;
+            }
+            function closeDropdown() {
+                dropdown.style.display = 'none';
+                dropdownOpen = false;
+                addMode = null;
+                if (!fromMapPending) document.getElementById('fromMapHint').style.display = 'none';
+            }
+
+            function renderDropdown() {
+                const listItems = locList.map((loc, i) => {
+                    const active = i === activeLocIdx ? ' active' : '';
+                    return `<li class="${active}" data-idx="${i}">
+                        <span class="sw-loc-name">${loc.name}</span>
+                        <button class="sw-loc-remove" data-remove="${i}" title="Remove">×</button>
+                    </li>`;
+                }).join('');
+
+                let addSection = '';
+                if (addMode === 'search') {
+                    addSection = `
+                        <div class="sw-loc-addrow">
+                            <div class="sw-loc-search-wrap">
+                                <input class="sw-loc-search-input" id="locSearchInput" type="text" placeholder="Place name…" autocomplete="off" />
+                                <button class="sw-loc-search-go" id="locSearchGo">Go</button>
+                            </div>
+                        </div>`;
+                }
+
+                const addListItem = addMode === 'search' ? '' :
+                    `<li id="addLocListItem" style="color:#536471;font-style:italic;">+ Add Location</li>`;
+
+                dropdown.innerHTML = `<ul class="sw-loc-list">${listItems}${addListItem}</ul>${addSection}`;
+
+                // Navigate on row click (anywhere except × button)
+                dropdown.querySelectorAll('li[data-idx]').forEach(li => {
+                    li.addEventListener('click', e => {
+                        if (e.target.closest('.sw-loc-remove')) return;
+                        navigateToLoc(parseInt(li.dataset.idx), true);
+                        closeDropdown();
+                    });
+                });
+
+                // Remove buttons
+                dropdown.querySelectorAll('[data-remove]').forEach(btn => {
+                    btn.addEventListener('click', e => {
+                        e.stopPropagation();
+                        const idx = parseInt(btn.dataset.remove);
+                        locList.splice(idx, 1);
+                        if (!locList.length) locList = LOC_DEFAULTS.slice();
+                        saveLocs(locList);
+                        if (activeLocIdx >= locList.length) activeLocIdx = 0;
+                        syncCurrentName();
+                        renderDropdown();
+                    });
+                });
+
+                // Add Location list item
+                const addLocListItem = document.getElementById('addLocListItem');
+                if (addLocListItem) addLocListItem.addEventListener('click', e => {
+                    e.stopPropagation();
+                    addMode = 'search';
+                    renderDropdown();
+                    setTimeout(() => { const inp = document.getElementById('locSearchInput'); if (inp) inp.focus(); }, 30);
+                });
+
+                // Add by search (legacy, kept for map flow)
+                const addBySearch = document.getElementById('addBySearch');
+                if (addBySearch) addBySearch.addEventListener('click', e => {
+                    e.stopPropagation();
+                    addMode = 'search';
+                    renderDropdown();
+                    setTimeout(() => { const inp = document.getElementById('locSearchInput'); if (inp) inp.focus(); }, 30);
+                });
+
+                // Add from map
+                const addFromMap = document.getElementById('addFromMap');
+                if (addFromMap) addFromMap.addEventListener('click', e => {
+                    e.stopPropagation();
+                    fromMapPending = true;
+                    closeDropdown();
+                    if (!mapVisible) {
+                        mapVisible = true;
+                        savePref('mapVisible', true);
+                        document.getElementById('map-section').style.display = '';
+                        document.getElementById('mapToggleBtn').classList.add('active');
+                    }
+                    showAddLocPopup(currentLat, currentLon);
+                    document.getElementById('world-map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+
+                // Search go
+                function doSearch(e) {
+                    if (e) e.stopPropagation();
+                    const inp = document.getElementById('locSearchInput');
+                    const q = inp && inp.value.trim();
+                    if (!q) return;
+                    const go = document.getElementById('locSearchGo');
+                    if (go) { go.textContent = '…'; go.disabled = true; }
+                    fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=10`, { headers: { 'Accept-Language': 'en' } })
+                        .then(r => r.json())
+                        .then(results => {
+                            if (go) { go.textContent = 'Go'; go.disabled = false; }
+                            if (!results.length) {
+                                if (inp) inp.style.borderColor = '#ef4444';
+                                return;
+                            }
+
+                            function pickResult(r) {
+                                const lat = parseFloat(parseFloat(r.lat).toFixed(5));
+                                const lon = parseFloat(parseFloat(r.lon).toFixed(5));
+                                const name = (r.display_name || '').split(',')[0].trim() || coordStr(lat, lon);
+                                locList.push({ lat, lon, name });
+                                saveLocs(locList);
+                                activeLocIdx = locList.length - 1;
+                                syncCurrentName();
+                                closeDropdown();
+                                navigateToLoc(activeLocIdx);
+                                // Always open map so setView has a visible container to render into
+                                if (!mapVisible) {
+                                    mapVisible = true;
+                                    savePref('mapVisible', mapVisible);
+                                    document.getElementById('map-section').style.display = '';
+                                    document.getElementById('mapToggleBtn').classList.add('active');
+                                }
+                                document.getElementById('world-map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                // Wait for scroll to settle before forcing map to correct position
+                                setTimeout(() => {
+                                    if (mapMarker) mapMarker.setLatLng([lat, lon]);
+                                    map.invalidateSize();
+                                    map.setView([lat, lon], 10);
+                                }, 600);
+                            }
+
+                            // Always show top 5 with full context so user can pick
+                            const top5 = results.slice(0, 5);
+                            if (top5.length === 1) { pickResult(top5[0]); return; }
+
+                            addMode = 'search';
+                            dropdown.style.display = '';
+                            dropdownOpen = true;
+                            const shortLabel = (r) => {
+                                const parts = (r.display_name || '').split(',').map(s => s.trim());
+                                // show up to 3 parts: name, state/region, country
+                                return [parts[0], parts[1], parts[parts.length - 1]].filter(Boolean).join(', ');
+                            };
+                            dropdown.innerHTML = `
+                                <div style="padding:8px 14px 4px;font-size:0.72rem;color:#536471;">Select a location — or specify state/country (e.g. <em>Gordon NSW</em>).</div>
+                                <ul class="sw-loc-list" id="disambigList">
+                                    ${top5.map((r, i) => `<li data-idx="${i}" style="flex-direction:column;align-items:flex-start;gap:2px;">
+                                        <span style="font-size:0.8rem;color:#0f1419;">${shortLabel(r)}</span>
+                                    </li>`).join('')}
+                                </ul>
+                                <div style="display:flex;gap:8px;padding:6px 14px 10px;">
+                                    <button id="disambigSearchBtn" style="flex:1;font:0.78rem/1 -apple-system,sans-serif;padding:5px 10px;background:#fff;border:1px solid #8b98a5;border-radius:999px;cursor:pointer;color:#536471;font-weight:700;">Search again</button>
+                                    <button id="disambigMapBtn" style="flex:1;font:0.78rem/1 -apple-system,sans-serif;padding:5px 10px;background:#fff;border:1px solid #8b98a5;border-radius:999px;cursor:pointer;color:#536471;font-weight:700;">Drop pin on map</button>
+                                </div>`;
+                            dropdown.querySelectorAll('#disambigList li').forEach(li => {
+                                li.addEventListener('click', () => pickResult(top5[parseInt(li.dataset.idx)]));
+                            });
+                            const disambigSearchBtn = dropdown.querySelector('#disambigSearchBtn');
+                            const disambigMapBtn = dropdown.querySelector('#disambigMapBtn');
+                            if (disambigSearchBtn) {
+                                L.DomEvent.stopPropagation({ addEventListener: (t,h) => disambigSearchBtn.addEventListener(t,h) });
+                                disambigSearchBtn.addEventListener('click', e => {
+                                    e.stopPropagation();
+                                    openDropdown();
+                                    setTimeout(() => { const inp = document.getElementById('locSearchInput'); if (inp) { inp.focus(); inp.select(); } }, 50);
+                                });
+                            }
+                            if (disambigMapBtn) {
+                                disambigMapBtn.addEventListener('click', e => {
+                                    e.stopPropagation();
+                                    closeDropdown();
+                                    if (!mapVisible) { mapVisible = true; savePref('mapVisible', mapVisible); document.getElementById('map-section').style.display = ''; document.getElementById('mapToggleBtn').classList.add('active'); setTimeout(() => { map.invalidateSize(); }, 100); }
+                                    document.getElementById('world-map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                });
+                            }
+                        })
+                        .catch(() => {
+                            if (go) { go.textContent = 'Go'; go.disabled = false; }
+                        });
+                }
+                const locSearchGo = document.getElementById('locSearchGo');
+                const locSearchInput = document.getElementById('locSearchInput');
+                if (locSearchGo) locSearchGo.addEventListener('click', doSearch);
+                if (locSearchInput) {
+                    locSearchInput.addEventListener('keydown', e => { e.stopPropagation(); if (e.key === 'Enter') doSearch(e); });
+                    locSearchInput.addEventListener('click', e => e.stopPropagation());
+                }
+            }
+
+            changeLocBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                setSat(false);
+                dropdownOpen ? closeDropdown() : openDropdown();
+            });
+            document.addEventListener('click', e => {
+                if (dropdownOpen && !dropdown.contains(e.target) && e.target !== changeLocBtn) closeDropdown();
+            });
+
+            const mapPillStyle = 'font:0.78rem/1 -apple-system,sans-serif;padding:6px 16px;background:#fff;border:1px solid #8b98a5;border-radius:999px;cursor:pointer;color:#536471;display:block;margin-bottom:5px;user-select:none;-webkit-user-select:none;font-weight:700;white-space:nowrap;';
+            const mapPillActiveStyle = mapPillStyle + 'background:#0f1419;color:#fff;border-color:#0f1419;';
+
+            function makeMapPill(label, onClick, isActive) {
+                const ctrl = L.control({ position: 'topright' });
+                ctrl.onAdd = function() {
+                    const btn = L.DomUtil.create('button', '');
+                    btn.style.cssText = isActive && isActive() ? mapPillActiveStyle : mapPillStyle;
+                    btn.textContent = label;
+                    btn._updateStyle = () => { btn.style.cssText = isActive && isActive() ? mapPillActiveStyle : mapPillStyle; btn.textContent = label; };
+                    L.DomEvent.on(btn, 'click', function(e) {
+                        L.DomEvent.stopPropagation(e);
+                        onClick(btn);
+                    });
+                    return btn;
+                };
+                ctrl.addTo(map);
+                return ctrl;
+            }
+
+            // Model selector dropdown
+            const modelBtn = document.getElementById('modelBtn');
+            const modelDropdown = document.getElementById('modelDropdown');
+            let modelDropOpen = false;
+            function renderModelDropdown() {
+                modelDropdown.innerHTML = '<ul class="sw-loc-list">' + MODEL_OPTIONS.map(o => {
+                    const isSel = o[0] === forcedModel;
+                    const hint = '';
+                    return `<li data-mid="${o[0]}" class="${isSel ? 'active' : ''}">
+                        <span class="sw-loc-name">${o[1]}${hint}</span>
+                    </li>`;
+                }).join('') + '</ul>';
+                modelDropdown.querySelectorAll('li[data-mid]').forEach(li => {
+                    li.addEventListener('click', e => {
+                        e.stopPropagation();
+                        forcedModel = li.dataset.mid;
+                        localStorage.setItem('sw_pref_model', forcedModel);
+                        closeModelDropdown();
+                        updateModelBtn(currentLat, currentLon);
+                        fetchWeather(currentLat, currentLon, false);
+                    });
+                });
+            }
+            function openModelDropdown() { renderModelDropdown(); modelDropdown.style.display = ''; modelDropOpen = true; }
+            function closeModelDropdown() { modelDropdown.style.display = 'none'; modelDropOpen = false; }
+            modelBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                modelDropOpen ? closeModelDropdown() : openModelDropdown();
+            });
+            document.addEventListener('click', e => {
+                if (modelDropOpen && !modelDropdown.contains(e.target) && e.target !== modelBtn) closeModelDropdown();
+            });
+
+            document.getElementById('refreshBtn').addEventListener('click', () => {
+                setSat(true);
+                fetchWeather(currentLat, currentLon, true);
+            });
+
+            setInterval(() => fetchWeather(currentLat, currentLon, false), 30 * 60 * 1000);
+
+            let resizeTimeout;
+            function updateForecastBtn() {
+                [['forecastBtn7',7],['forecastBtn14',14],['forecastBtn5',5],['forecastBtn9',9]].forEach(([id,days]) => {
+                    const b = document.getElementById(id);
+                    if (b) b.classList.toggle('active', forecastDays === days);
+                });
+            }
+
+            document.getElementById('forecastBtn7').addEventListener('click', () => {
+                forecastDays = 7; updateForecastBtn(); fetchWeather(currentLat, currentLon, false);
+            });
+            document.getElementById('forecastBtn14').addEventListener('click', () => {
+                forecastDays = 14; updateForecastBtn(); fetchWeather(currentLat, currentLon, false);
+            });
+            document.getElementById('forecastBtn5').addEventListener('click', () => {
+                forecastDays = 5; updateForecastBtn(); fetchWeather(currentLat, currentLon, false);
+            });
+            document.getElementById('forecastBtn9').addEventListener('click', () => {
+                forecastDays = 9; updateForecastBtn(); fetchWeather(currentLat, currentLon, false);
+            });
+
+            updateForecastBtn();
+
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const container = document.getElementById('chartContainer');
+                    if (container && container.querySelector('canvas') && chartData) drawChart(chartData);
+                }, 500);
+            });
+
+            // Map
+            const map = L.map('world-map', {
+                center: [-25, 133],
+                zoom: 3,
+                minZoom: 2,
+                maxZoom: 18,
+                zoomControl: true,
+                attributionControl: true,
+                worldCopyJump: false,
+            });
+
+            // Location label overlay — top-centre of the map
+            (function() {
+                const div = document.createElement('div');
+                div.id = 'locationLabel';
+                div.style.cssText = 'position:absolute;left:50%;transform:translateX(-50%);top:10px;z-index:800;background:#fff;border-radius:8px;padding:5px 14px;font-size:0.8rem;color:#0f1419;pointer-events:none;text-align:center;white-space:nowrap;max-width:70%;font-family:-apple-system,sans-serif;';
+                map.getContainer().appendChild(div);
+            })();
+
+            function loadPref(key, def) {
+                const v = localStorage.getItem('sw_pref_' + key);
+                return v === null ? def : v === 'true';
+            }
+            function savePref(key, val) { localStorage.setItem('sw_pref_' + key, val); }
+
+            let showEnglish = loadPref('english', false);
+
+            function makeTileLayer(english) {
+                if (english) {
+                    return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                        attribution: '© OpenStreetMap © CARTO',
+                        maxZoom: 19,
+                        opacity: 1,
+                    });
+                } else {
+                    return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '© OpenStreetMap contributors',
+                        maxZoom: 18,
+                        opacity: 1,
+                    });
+                }
+            }
+
+            let tileLayer = makeTileLayer(showEnglish).addTo(map);
+
+            // Day/night terminator overlay — single blurred polygon via custom pane
+            function getSolarParams() {
+                const now = new Date();
+                const JD = now.getTime() / 86400000 + 2440587.5;
+                const n = JD - 2451545.0;
+                const L = (280.460 + 0.9856474 * n) % 360;
+                const g = ((357.528 + 0.9856003 * n) % 360) * Math.PI / 180;
+                const lambda = (L + 1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g)) * Math.PI / 180;
+                const eps = (23.439 - 0.0000004 * n) * Math.PI / 180;
+                const dec = Math.asin(Math.sin(eps) * Math.sin(lambda));
+                const GMST = ((6.697375 + 0.0657098242 * n) % 24 +
+                    now.getUTCHours() + now.getUTCMinutes() / 60 + now.getUTCSeconds() / 3600) % 24;
+                const RA = Math.atan2(Math.cos(eps) * Math.sin(lambda), Math.cos(lambda)) * 12 / Math.PI;
+                let sunLon = ((RA - GMST) * 15 + 360) % 360;
+                if (sunLon > 180) sunLon -= 360;
+                return { dec, sunLon };
+            }
+
+            function computeNightPolygon() {
+                const { dec, sunLon } = getSolarParams();
+                const tanDec = Math.tan(dec);
+                const pts = [];
+                for (let lng = -540; lng <= 540; lng++) {
+                    const lngR = (lng - sunLon) * Math.PI / 180;
+                    const lat = Math.abs(tanDec) < 0.0001
+                        ? (Math.cos(lngR) > 0 ? -90 : 90)
+                        : Math.atan(-Math.cos(lngR) / tanDec) * 180 / Math.PI;
+                    pts.push([lat, lng]);
+                }
+                if (dec > 0) { pts.push([-90, 540]); pts.push([-90, -540]); }
+                else         { pts.push([ 90, 540]); pts.push([ 90, -540]); }
+                return pts;
+            }
+
+            // Custom pane so we can apply CSS blur to just this layer
+            map.createPane('nightPane');
+            map.getPane('nightPane').style.filter = 'blur(14px)';
+            map.getPane('nightPane').style.pointerEvents = 'none';
+
+            const btnStyle = 'font:0.65rem/1 -apple-system,sans-serif;padding:2px 7px;background:#f1f5f9;border:1px solid #9ca3af;border-radius:4px;cursor:pointer;color:#374151;display:block;margin-bottom:4px;user-select:none;-webkit-user-select:none;box-shadow:0 1px 4px rgba(0,0,0,0.13);min-width:150px;text-align:left;';
+
+            function stateLabel(label, on) {
+                const onStr  = `<span style="color:${on  ? '#111827' : '#9ca3af'}">ON</span>`;
+                const offStr = `<span style="color:${on  ? '#6b7280' : '#111827'}">OFF</span>`;
+                return `${label} ${onStr} | ${offStr}`;
+            }
+
+            // --- Satellite overlay ---
+            let showSat = true;
+
+            function buildSatLayer() {
+                const d = new Date(Date.now() - 86400000);
+                const date = d.toISOString().slice(0, 10);
+                return L.tileLayer(
+                    `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_NOAA20_CorrectedReflectance_TrueColor/default/${date}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg`,
+                    { opacity: 0.8, zIndex: 490, maxNativeZoom: 9, attribution: 'NASA GIBS' }
+                );
+            }
+            let satLayer = buildSatLayer();
+            if (showSat) satLayer.addTo(map);
+
+            let satPillBtn = null;
+            function setSat(on) {
+                showSat = on;
+                savePref('sat', on);
+                if (showSat) { if (!map.hasLayer(satLayer)) satLayer.addTo(map); }
+                else { if (map.hasLayer(satLayer)) map.removeLayer(satLayer); }
+                if (satPillBtn) satPillBtn._updateStyle();
+            }
+
+            // --- Night overlay ---
+            let showNight = loadPref('night', false);
+            const nightLayer = L.polygon(computeNightPolygon(), {
+                pane: 'nightPane',
+                color: 'none',
+                fillColor: '#0d1b3e',
+                fillOpacity: 0.45,
+                interactive: false,
+                smoothFactor: 2,
+            });
+            if (showNight) nightLayer.addTo(map);
+
+            setInterval(() => { if (showNight) nightLayer.setLatLngs(computeNightPolygon()); }, 60000);
+
+            // --- Map pill controls (topright) ---
+
+
+            // Default Locations
+
+            // Satellite VIIRS
+            const _satCtrl = makeMapPill('Satellite VIIRS', (btn) => {
+                satPillBtn = btn;
+                setSat(!showSat);
+            }, () => showSat);
+            // Capture the sat pill button element for external style updates
+            if (_satCtrl.getContainer) satPillBtn = _satCtrl.getContainer();
+            // Force sat on at load with button in sync
+            setSat(true);
+
+            // Day/Night Overlay
+            const _nightCtrl = makeMapPill('Day/Night Overlay', (btn) => {
+                showNight = !showNight;
+                savePref('night', showNight);
+                if (showNight) { nightLayer.setLatLngs(computeNightPolygon()); map.addLayer(nightLayer); }
+                else map.removeLayer(nightLayer);
+                setSat(false);
+                btn.style.cssText = showNight ? mapPillActiveStyle : mapPillStyle;
+                btn.textContent = 'Day/Night Overlay';
+            }, () => showNight);
+
+            // CartoDB Overlay
+            const _engCtrl = makeMapPill('CartoDB Overlay', (btn) => {
+                showEnglish = !showEnglish;
+                savePref('english', showEnglish);
+                map.removeLayer(tileLayer);
+                tileLayer = makeTileLayer(showEnglish).addTo(map);
+                setSat(false);
+                btn.style.cssText = showEnglish ? mapPillActiveStyle : mapPillStyle;
+                btn.textContent = 'CartoDB Overlay';
+            }, () => showEnglish);
+
+            // Search button
+            const _searchCtrl = L.control({ position: 'topright' });
+            _searchCtrl.onAdd = function() {
+                const wrap = L.DomUtil.create('div', '');
+                wrap.style.cssText = 'display:flex;flex-direction:column;align-items:flex-end;gap:4px;margin-bottom:0;';
+
+                const btn = L.DomUtil.create('button', '', wrap);
+                btn.style.cssText = mapPillStyle;
+                btn.textContent = 'Search';
+
+                const inputWrap = L.DomUtil.create('div', '', wrap);
+                inputWrap.style.cssText = 'display:none;';
+                inputWrap.innerHTML = `<input id="mapSearchInput" type="text" placeholder="Place name…" style="font:0.72rem/1 -apple-system,sans-serif;padding:5px 8px;border:1px solid #8b98a5;border-radius:8px;width:160px;outline:none;color:#0f1419;" />`;
+
+                L.DomEvent.on(btn, 'click', function(e) {
+                    L.DomEvent.stopPropagation(e);
+                    const showing = inputWrap.style.display !== 'none';
+                    inputWrap.style.display = showing ? 'none' : 'block';
+                    if (!showing) setTimeout(() => inputWrap.querySelector('input').focus(), 50);
+                });
+
+                L.DomEvent.on(inputWrap.querySelector('input'), 'keydown', function(e) {
+                    L.DomEvent.stopPropagation(e);
+                    if (e.key !== 'Enter') return;
+                    const q = e.target.value.trim();
+                    if (!q) return;
+                    fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=1`, { headers: { 'Accept-Language': 'en' } })
+                        .then(r => r.json())
+                        .then(results => {
+                            if (!results.length) return;
+                            const { lat, lon } = results[0];
+                            currentLat = parseFloat(parseFloat(lat).toFixed(5));
+                            currentLon = parseFloat(parseFloat(lon).toFixed(5));
+                            mapMarker.setLatLng([currentLat, currentLon]);
+                            map.setView([currentLat, currentLon], 10);
+                            updateLocationLabel(currentLat, currentLon);
+                            fetchWeather(currentLat, currentLon, false);
+                            showAddLocPopup(currentLat, currentLon);
+                            inputWrap.style.display = 'none';
+                            e.target.value = '';
+                        });
+                });
+
+                L.DomEvent.on(inputWrap, 'click', L.DomEvent.stopPropagation);
+                return wrap;
+            };
+            _searchCtrl.addTo(map);
+
+            const pinIcon = L.divIcon({
+                className: '',
+                html: `<div style="width:24px;height:24px;background:#f0883e;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.4);"></div>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12],
+            });
+
+            // Load first location on startup
+            const _first = locList[0];
+            currentLat = _first.lat; currentLon = _first.lon;
+            map.setView([currentLat, currentLon], map.getZoom());
+            updateLocationLabel(currentLat, currentLon);
+            syncCurrentName();
+            fetchWeather(currentLat, currentLon, false);
+
+            mapMarker = L.marker([currentLat, currentLon], { icon: pinIcon }).addTo(map);
+
+            // Map / Graph toggle buttons
+            const mapToggleBtn = document.getElementById('mapToggleBtn');
+            const mapSection = document.getElementById('map-section');
+            let mapVisible = loadPref('mapVisible', true);
+            mapSection.style.display = mapVisible ? '' : 'none';
+            mapToggleBtn.classList.toggle('active', mapVisible);
+            mapToggleBtn.addEventListener('click', () => {
+                mapVisible = !mapVisible;
+                savePref('mapVisible', mapVisible);
+                mapSection.style.display = mapVisible ? '' : 'none';
+                mapToggleBtn.classList.toggle('active', mapVisible);
+                setSat(false);
+                if (mapVisible) setTimeout(() => { map.invalidateSize(); map.setView([currentLat, currentLon], map.getZoom()); }, 50);
+            });
+
+            const graphToggleBtn = document.getElementById('graphToggleBtn');
+            const graphSection = document.getElementById('graph-section');
+            const forecastBtnGroup = document.getElementById('forecastBtnGroup');
+            let graphVisible = loadPref('graphVisible', true);
+            graphSection.style.display = graphVisible ? '' : 'none';
+            if (forecastBtnGroup) forecastBtnGroup.style.display = graphVisible ? '' : 'none';
+            graphToggleBtn.classList.toggle('active', graphVisible);
+            graphToggleBtn.addEventListener('click', () => {
+                graphVisible = !graphVisible;
+                savePref('graphVisible', graphVisible);
+                graphSection.style.display = graphVisible ? '' : 'none';
+                if (forecastBtnGroup) forecastBtnGroup.style.display = graphVisible ? '' : 'none';
+                graphToggleBtn.classList.toggle('active', graphVisible);
+                if (graphVisible && chartData) drawChart(chartData);
+            });
+
+            const dailyToggleBtn = document.getElementById('dailyToggleBtn');
+            const dailyStrip = document.getElementById('daily-strip');
+            let dailyVisible = true;
+            dailyStrip.style.display = dailyVisible ? '' : 'none';
+            dailyToggleBtn.classList.toggle('active', dailyVisible);
+            dailyToggleBtn.addEventListener('click', () => {
+                dailyVisible = !dailyVisible;
+                savePref('dailyVisible', dailyVisible);
+                dailyStrip.style.display = dailyVisible ? '' : 'none';
+                dailyToggleBtn.classList.toggle('active', dailyVisible);
+            });
+
+            map.on('click', function(e) {
+                const { lat, lng } = e.latlng;
+                currentLat = parseFloat(lat.toFixed(5));
+                currentLon = parseFloat((((lng % 360) + 540) % 360 - 180).toFixed(5));
+                mapMarker.setLatLng([lat, lng]);
+                updateLocationLabel(currentLat, currentLon);
+                const _nameEl = document.getElementById('currentLocName');
+                if (_nameEl) _nameEl.textContent = coordStr(currentLat, currentLon);
+                getPlaceName(currentLat, currentLon).then(name => {
+                    const el = document.getElementById('currentLocName');
+                    if (el) el.textContent = name;
+                });
+                setSat(false);
+                fetchWeather(currentLat, currentLon, false);
+                showAddLocPopup(currentLat, currentLon);
+            });
+        })();
+    </script>
+</body>
+</html>
